@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        var credentialsProvider:AWSCognitoCredentialsProvider = AWSCognitoCredentialsProvider.credentialsWithRegionType(AWSRegionType.USEast1, accountId:"156974311006", identityPoolId:"us-east-1:87b1638e-1e2d-45a5-9999-505778436a17", unauthRoleArn:"arn:aws:iam::156974311006:role/Cognito_s3demoUnauth_DefaultRole", authRoleArn:"arn:aws:iam::156974311006:role/Cognito_s3demoAuth_DefaultRole")
+        var credentialsProvider:AWSCognitoCredentialsProvider = AWSCognitoCredentialsProvider.credentialsWithRegionType(AWSRegionType.USEast1, accountId:"##########", identityPoolId:"#######", unauthRoleArn:"#######", authRoleArn:"########")
         
         var configuration:AWSServiceConfiguration = AWSServiceConfiguration(region: AWSRegionType.USEast1, credentialsProvider: credentialsProvider)
         
