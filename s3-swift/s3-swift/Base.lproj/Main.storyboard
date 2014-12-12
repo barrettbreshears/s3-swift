@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="YCA-vC-IlN">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="kom-9t-ub9">
+            <objects>
+                <viewController id="YCA-vC-IlN" customClass="ViewController" customModule="s3_swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DsG-5D-hY7"/>
+                        <viewControllerLayoutGuide type="bottom" id="b8n-Uo-N18"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sbi-W2-mtQ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="H5v-eO-75V">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KlE-Dl-vuz">
+                                <rect key="frame" x="16" y="534" width="568" height="50"/>
+                                <color key="backgroundColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="DaY-2L-mvO"/>
+                                </constraints>
+                                <state key="normal" title="Upload">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="0.43921568630000002" blue="0.14901960780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="uploadBtnClicked:" destination="YCA-vC-IlN" eventType="touchUpInside" id="q2C-VB-rqT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yAT-l4-GCc">
+                                <rect key="frame" x="16" y="468" width="276" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="pft-YB-7bn"/>
+                                </constraints>
+                                <state key="normal" title="Gallery">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="galleryBtnClicked:" destination="YCA-vC-IlN" eventType="touchUpInside" id="sL0-Sd-IRK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aiz-OL-wlh">
+                                <rect key="frame" x="308" y="468" width="276" height="50"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="m65-aK-xD7"/>
+                                </constraints>
+                                <state key="normal" title="Camera">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="cameraBtnClicked:" destination="YCA-vC-IlN" eventType="touchUpInside" id="Mss-uw-9sH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KlE-Dl-vuz" firstAttribute="top" secondItem="Aiz-OL-wlh" secondAttribute="bottom" constant="16" id="8TG-ck-tkg"/>
+                            <constraint firstItem="yAT-l4-GCc" firstAttribute="leading" secondItem="sbi-W2-mtQ" secondAttribute="leading" constant="16" id="E7p-iY-VD4"/>
+                            <constraint firstItem="KlE-Dl-vuz" firstAttribute="leading" secondItem="sbi-W2-mtQ" secondAttribute="leading" constant="16" id="PDt-ao-HXl"/>
+                            <constraint firstItem="b8n-Uo-N18" firstAttribute="top" secondItem="KlE-Dl-vuz" secondAttribute="bottom" constant="16" id="Qzt-T1-jo1"/>
+                            <constraint firstAttribute="trailing" secondItem="H5v-eO-75V" secondAttribute="trailing" id="Soc-A6-1ev"/>
+                            <constraint firstAttribute="trailing" secondItem="KlE-Dl-vuz" secondAttribute="trailing" constant="16" id="TMv-nd-8RG"/>
+                            <constraint firstItem="yAT-l4-GCc" firstAttribute="width" secondItem="Aiz-OL-wlh" secondAttribute="width" id="Xlk-fV-3H4"/>
+                            <constraint firstItem="Aiz-OL-wlh" firstAttribute="leading" secondItem="yAT-l4-GCc" secondAttribute="trailing" constant="16" id="XvW-3f-Rra"/>
+                            <constraint firstAttribute="trailing" secondItem="Aiz-OL-wlh" secondAttribute="trailing" constant="16" id="ZLL-To-Jgh"/>
+                            <constraint firstItem="H5v-eO-75V" firstAttribute="leading" secondItem="sbi-W2-mtQ" secondAttribute="leading" id="ZLc-Xx-Jsz"/>
+                            <constraint firstItem="KlE-Dl-vuz" firstAttribute="top" secondItem="yAT-l4-GCc" secondAttribute="bottom" constant="16" id="eeK-Qp-4xq"/>
+                            <constraint firstItem="H5v-eO-75V" firstAttribute="top" secondItem="sbi-W2-mtQ" secondAttribute="top" id="iDz-dk-h4E"/>
+                            <constraint firstItem="b8n-Uo-N18" firstAttribute="top" secondItem="H5v-eO-75V" secondAttribute="bottom" id="ubA-dH-4Fu"/>
+                            <constraint firstItem="Aiz-OL-wlh" firstAttribute="leading" secondItem="yAT-l4-GCc" secondAttribute="trailing" constant="16" id="y3w-x9-wlL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="selectedImage" destination="H5v-eO-75V" id="I8E-lp-FWL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BFQ-7S-fos" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
